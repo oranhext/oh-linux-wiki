@@ -1,0 +1,68 @@
+site_name: Oh! Linux
+site_url: https://wiki.hext.top/
+site_author: OranHext
+site_description: >-
+  一本专注于内容和共享的 Linux Wiki，旨在为 Linux 用户提供良好的知识文档。
+
+repo_name: oranhext/oh-linux-wiki
+repo_url: https://github.com/oranhext/oh-linux-wiki
+
+copyright: "©2022 OranHext. All rights reserved."
+
+theme:
+  name: material
+  language: 'zh'
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 夜间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 日间模式
+
+
+nav:
+  - 主页: index.md
+  - Arch Linux:
+    - 关于 Arch Linux: archlinux/index.md
+    - 基础安装:
+      - 安装前准备: archlinux/prepare.md
+      - 基础系统: archlinux/basic-os.md
+    - 桌面环境:
+      - 关于桌面环境: archlinux/de/index.md
+      - GNOME: archlinux/de/gnome.md
+      - KDE Plasma: archlinux/de/kde.md
+      - Xfce: archlinux/de/xfce.md
+  - Gentoo:
+    - 关于 Gentoo: gentoo/index.md
+  - NixOS:
+    - 关于 NixOS: nixos/index.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oranhext
+
+markdown_extensions:
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
