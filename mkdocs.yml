@@ -6,6 +6,7 @@ site_description: >-
 
 repo_name: oranhext/oh-linux-wiki
 repo_url: https://github.com/oranhext/oh-linux-wiki
+edit_uri: edit/main/docs/
 
 copyright: "©2022 OranHext. All rights reserved."
 
