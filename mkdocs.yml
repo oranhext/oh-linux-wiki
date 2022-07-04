@@ -12,7 +12,7 @@ copyright: "©2022 OranHext. All rights reserved."
 
 theme:
   name: material
-  language: 'zh'
+  language: "zh"
   logo: assets/images/logo.png
   favicon: assets/images/favicon.png
   icon:
@@ -20,7 +20,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-  palette: 
+  palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
@@ -32,29 +32,29 @@ theme:
         icon: material/weather-sunny
         name: 日间模式
 
-
 nav:
   - 主页: index.md
   - Arch Linux:
-    - 关于 Arch Linux: archlinux/index.md
-    - 基础安装:
-      - 安装前准备: archlinux/prepare.md
-      - 基础系统: archlinux/basic-os.md
-    - 桌面环境:
-      - 关于桌面环境: archlinux/de/index.md
-      - GNOME: archlinux/de/gnome.md
-      - KDE Plasma: archlinux/de/kde.md
-      - Xfce: archlinux/de/xfce.md
+      - 关于 Arch Linux: archlinux/index.md
+      - 基础安装:
+          - 安装前准备: archlinux/prepare.md
+          - 基础系统: archlinux/basic-os.md
+      - 桌面环境:
+          - 关于桌面环境: archlinux/de/index.md
+          - GNOME: archlinux/de/gnome.md
+          - KDE Plasma: archlinux/de/kde.md
+          - Xfce: archlinux/de/xfce.md
   - Gentoo:
-    - 关于 Gentoo: gentoo/index.md
+      - 关于 Gentoo: gentoo/index.md
   - NixOS:
-    - 关于 NixOS: nixos/index.md
+      - 关于 NixOS: nixos/index.md
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/oranhext
+      name: oranhext on GitHub
 
 markdown_extensions:
   - meta
@@ -67,3 +67,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_date
+      exclude:
+        - index.md
