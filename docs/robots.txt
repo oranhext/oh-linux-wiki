@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://wiki.hext.top/sitemap.xml
